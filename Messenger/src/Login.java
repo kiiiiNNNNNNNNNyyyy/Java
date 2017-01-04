@@ -1,5 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.io.IOException;
 import java.net.UnknownHostException;
 
@@ -15,7 +17,7 @@ public class Login {
 		JPanel panel = new JPanel();
 		final JTextField loginName = new JTextField(20);
 		JButton  enter = new JButton("Login");
-				
+		
 		panel.add(loginName);
 		panel.add(enter);
 		login.setSize(300, 100);
@@ -39,6 +41,39 @@ public class Login {
 				}
 			}
 		});
+		
+		loginName.addKeyListener(new KeyListener() {
+			
+			@Override
+			public void keyTyped(KeyEvent e) {
+				
+			}
+			
+			@Override
+			public void keyReleased(KeyEvent e) {
+				
+					if(e.getKeyCode() == KeyEvent.VK_ENTER){
+					try {
+						ChatClient client = new ChatClient(loginName.getText());
+						login.setVisible(false);
+						login.dispose(); 
+					} catch (UnknownHostException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+			}
+			
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
 	}
 	
 }

@@ -67,7 +67,7 @@ public class ChatServer {
 					else if(msgType.equals("Logout")){
 						for(int i = 0;i < LoginNames.size(); i++){
 							
-							if(LoginName == LoginNames.elementAt(i)){
+							if(LoginName.equals(LoginNames.elementAt(i))){
 								lo = i;
 							}
 							
@@ -87,6 +87,9 @@ public class ChatServer {
 							DataOutputStream pOut = new DataOutputStream(pScoket.getOutputStream());
 							pOut.writeUTF(LoginName + " : " + msg);
 						}
+					}
+					if(msgType.equals("Logout")){
+						break;
 					}
 				} catch (IOException e) {
 					e.printStackTrace();
