@@ -104,9 +104,4 @@ public class ChatClient extends JFrame implements Runnable{
 			} 
 		}
 	}
-	
-	public static void main(String args[]) throws UnknownHostException, IOException{
-		ChatClient client = new ChatClient("User1");
-	}
-	
 }
