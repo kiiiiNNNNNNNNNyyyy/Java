@@ -73,7 +73,9 @@ public class Login extends JPanel implements ActionListener{
 				}
 				
 				if(pass.equals(sb.toString())){
-					System.out.println("You have logged in!!");
+					//System.out.println("You have logged in!!");
+					add(new FileBrowser(userTF.getText()), "fb");
+					cl.show(this, "fb");
 				}
 				
 			} catch (FileNotFoundException e1) {
