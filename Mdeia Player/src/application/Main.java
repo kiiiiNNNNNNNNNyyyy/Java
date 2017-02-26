@@ -58,7 +58,7 @@ public class Main extends Application {
 		String path = "file:///C:/gotg1.mp4";
 		File f = new File(path);
 		if(!f.exists()){
-			System.out.println("File Missing!!");
+			System.out.println("File is Missing!!");
 		}
 		                        
 		player = new Player(path);
