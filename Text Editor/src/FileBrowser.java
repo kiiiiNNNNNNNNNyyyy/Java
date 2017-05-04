@@ -13,8 +13,10 @@ import javax.swing.JTextField;
 public class FileBrowser extends JPanel implements ActionListener{
 
 	JLabel label = new JLabel("File List: ");
+	JLabel msg = new JLabel("Login Again to see newly created files.");
 	JButton newFile = new JButton("New File");
 	JButton open = new JButton("Open");
+	JButton log = new JButton("Login Again!");
 	JTextField newTF = new JTextField(10); 
 	
 	ButtonGroup bg;
@@ -24,7 +26,8 @@ public class FileBrowser extends JPanel implements ActionListener{
 		directory = new File(dir);
 		directory.mkdir();
 		JPanel fileList = new JPanel(new GridLayout(directory.listFiles().length + 3, 1));
-		fileList.add(label);
+		fileList.add(label);	
+		fileList.add(msg);
 		bg = new ButtonGroup();
 		
 		for(File file: directory.listFiles()){
@@ -40,6 +43,8 @@ public class FileBrowser extends JPanel implements ActionListener{
 		newFile.addActionListener(this);
 		open.addActionListener(this);
 		fileList.add(open);
+		log.addActionListener(this);
+		fileList.add(log);
 		fileList.add(newPan);
 		add(fileList); 
 		
@@ -61,6 +66,10 @@ public class FileBrowser extends JPanel implements ActionListener{
 				login.add(new Editor(file), "editor");
 				login.cl.show(login, "editor");
 			}
+		}
+		
+		if(e.getSource() == log){
+			login.cl.show(login, "login");
 		}
 		
 	}

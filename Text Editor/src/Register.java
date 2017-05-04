@@ -29,11 +29,12 @@ public class Register extends JPanel implements ActionListener{
 	JPasswordField passC = new JPasswordField();
 	JButton register = new JButton("Register: ");
 	JButton back = new  JButton("Go Back");
+	JLabel nouser = new JLabel("");
 	
 	public Register(){
 		
 		JPanel loginP = new JPanel();
-		loginP.setLayout(new GridLayout(4, 2));
+		loginP.setLayout(new GridLayout(5, 2));
 		loginP.add(userL);
 		loginP.add(userTF);
 		loginP.add(passL);
@@ -42,6 +43,7 @@ public class Register extends JPanel implements ActionListener{
 		loginP.add(passC);
 		loginP.add(register);
 		loginP.add(back);
+		loginP.add(nouser);
 		register.addActionListener(this);
 		back.addActionListener(this);
 		add(loginP);
@@ -102,6 +104,8 @@ public class Register extends JPanel implements ActionListener{
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+			}else{
+				nouser.setText("Passwords do not match!!");
 			}
 		}
 		
