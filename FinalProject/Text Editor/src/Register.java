@@ -105,7 +105,7 @@ public class Register extends JPanel implements ActionListener{
 					e1.printStackTrace();
 				}
 			}else{
-					nouser.setText("Passwords do not match!!");
+				nouser.setText("Passwords Do not Match!!");
 			}
 		}
 		
