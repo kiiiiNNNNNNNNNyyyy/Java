@@ -1,0 +1,23 @@
+StringJoiner: Simplify composing a string comprised of a sequence of values
+
+// first argument is the seperator
+StringJoiner sj =  new StringJoiner(", ");
+sj.add("alpha");
+sj.add("theta");
+sj.add("gamma");
+
+String theResult = sj.toString(); // Output to = alpha, thete, gamma
+
+We also have chaning methods
+sj.add("alpha").add("theta").add("gamma");
+sj.toString();
+
+StringJoiner with Start and End Values
+
+StringJoiner sj = new StringJoiner(", ", "{", "}");
+
+sj.add("alpha");
+sj.add("theta");
+sj.add("gamma");
+
+String theResult = sj.toString(); // Output to = {alpha, thete, gamma}
