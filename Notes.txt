@@ -59,3 +59,11 @@ for(String theParts:parts){
 }
 
 **************************************** Patter and Matches Classes **********************************
+
+String s1  = "apple, apple and orange please";
+Pattern pattern = Pattern.compile("\\w+");
+Matcher matcher = pattern.matcher(s1);
+
+while(matcher.find()){
+    sop(matcher.group());
+}
