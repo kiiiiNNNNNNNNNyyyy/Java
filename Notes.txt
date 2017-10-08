@@ -39,3 +39,23 @@ String s4 = String.format("%#x", 32); //0x20 - H - Hexa
 We can also do stuff like include radix #, zero-padding, Left justify, include grouping separator
 
 ********************************************* Regular Expressions **********************************
+xyz - match the sequence xyz
+\w = match 1+ word characters (letter, digit, underscore)
+\b = match word breaks
+
+Useful methods - replaceAll, replaceFirst, split, match
+
+String s1  = "apple, apple and orange please";
+String s2 = s1.replaceAll("ple", "ricot");  // will also replace ple in please
+String s3 = s1.replaceAll("ple\\b", "ricot");  // will also replace ple in please
+String[] parts = s1.split("\\b"); // array of words after word breaks ["apple", ", ", " ", "and", " ", "orange", " ", "please" ]
+
+printintout the words 
+
+for(String theParts:parts){
+    if(thePart.matches("\\w+" )){       // only if it alphabet characters
+        sop(thePart);
+    }
+}
+
+**************************************** Patter and Matches Classes **********************************
