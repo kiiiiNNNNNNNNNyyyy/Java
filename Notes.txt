@@ -21,3 +21,21 @@ sj.add("theta");
 sj.add("gamma");
 
 String theResult = sj.toString(); // Output to = {alpha, thete, gamma}
+
+
+********************************************* STRING FORMAT *****************************************
+
+String s2 = String.format("My nephews are %d, %d, %d and %d years old, age1, age2, age3, age4);
+float x = 3.666666665
+String s4 = String.format("The average age between each is %.1f years", x);
+
+%.1 will round of to one decimal point
+
+String conversions
+
+String s4 = String.format("%#o", 32); //040 - O - Octa
+String s4 = String.format("%#x", 32); //0x20 - H - Hexa
+
+We can also do stuff like include radix #, zero-padding, Left justify, include grouping separator
+
+********************************************* Regular Expressions **********************************
