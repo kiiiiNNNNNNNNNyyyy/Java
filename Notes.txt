@@ -67,3 +67,29 @@ Matcher matcher = pattern.matcher(s1);
 while(matcher.find()){
     sop(matcher.group());
 }
+
+ ***************************************** Multithreading **********************************************
+Process:- 
+Instance of a program/application
+Has resources such as memory, etc.
+Has atleast one thread.
+
+Thread
+Sequence of programmed instructions
+The thing that executes a program's code.
+Utilizing process resources
+
+Multitheading- can enable more complete CPU use
+Threads often wait on non-CPU tasks. like Interacting with storage, networks etc.
+Most computers have mulitple CPU cores. Allows things to run in parallel
+
+Implementing a Thread-
+
+Using a Runnable Interface.
+	Represents a task to be run on a thread.
+	Only member is the run method.
+
+Thread Class
+	Represents a thread of execution
+	Can Interact with and effect thread state.
+	Begin execution woth start method.
