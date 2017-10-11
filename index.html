@@ -175,28 +175,58 @@
                     <hr />
 
                     <div class="col-offset-1 col-md-11">
-                        <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
                         <div class="col-offset-1 col-md-11">
                             <p>
                                 <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
                                 The most important thing to remember about strings in java is that strings are immutable. Once a String object is created,  its content cannot be altered. To alter Strings, Java defines peer classes of String, called StringBuffer and StringBuilder, which allows strings to be altered. Both these classes are available in java.lang package. All three (String, StringBuffer and StringBuilder) implements the CharSequence interface.
                             </p>
+                            <p>
                                 <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;charAt() - To extract a single character from a string, you can refer directly to an individual characters via charAt() method.<br/>
                                 <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getChars() - If you need to extract more than one character at a time, you can use getChars().<br/>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getBytes() - This is an alternative to getChars() that stores the characters in an array of bytes. It uses the default character-to-byte conversions provided by the platform.
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;regionMatches() - The regionMatches() method comparesa specific region inside a string with another specific region in another string. It returns true or false. <br>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;startsWith() - The startsWith() method determines whether a given String begins with a specified string. <br>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;endsWith() - The endsWith() determines whether the string given ends with a specified string.<br>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; equals() Versus == - The equals method compares the characters inside a String object. The == operator compates two object references to see whether they refer to the same instance. <br>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; indexOf() - The indexOf() function searches for the first occurrence of a character or a substring.<br>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; lastIndexOf() - The indexOf() function searches for the last occurrence of a character or a substring.<br>
-                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; substring() -  This functions returns a copy of the substring that begins at startIndex and runs to the end of the invoking string or the mentioned the lastIndex. <br>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getBytes() - This is an alternative to getChars() that stores the characters in an array of bytes. It uses the default character-to-byte conversions provided by the platform.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;regionMatches() - The regionMatches() method comparesa specific region inside a string with another specific region in another string. It returns true or false. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;startsWith() - The startsWith() method determines whether a given String begins with a specified string. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;endsWith() - The endsWith() determines whether the string given ends with a specified string.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; equals() Versus == - The equals method compares the characters inside a String object. The == operator compates two object references to see whether they refer to the same instance. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; indexOf() - The indexOf() function searches for the first occurrence of a character or a substring.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; lastIndexOf() - The indexOf() function searches for the last occurrence of a character or a substring.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; substring() -  This functions returns a copy of the substring that begins at startIndex and runs to the end of the invoking string or the mentioned the lastIndex. <br/>
                                 <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;trim() - The trim method returns a copy of the invoking string from which any leading and trailing whitespace has been removed. <br> 
-                            <p>
-
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; join() - This method is used to concatenate two or more strings, seprating each string with a delimiter, such as a comma or a colon, depending on input.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Some other useful functions - isEmpty(), replaceFirst(), replaceAll(), split(). <br/>
                             </p>
                         </div>
                     </div>
+
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; StringBuffer</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                StringBuffer supports modifiable strings. StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The current length of a StringBuffer can be found via the length() method, while the total allocated capacity can be found through the capacity() method. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; ensureCapacity() - This method can set the size of the buffer. This is useful if you know in advane that you will be appending a large number of small strings to  StringBuffer<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; setLength() - To set the length of the string within a StringBuffer ibject, we have to use setLength()<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; setChatAt() - StringBuffer allows to set the character at a particular point which we can get using chatAt() or getChars()<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; append() - This method concatenates the string representation of any other type of data to the end of the invoking StringBuffer object.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; insert() - This method inserts one string into another. It is overloaded to accept values of all the primitive types, plus Strings, Objects, and CharSequence.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; reverse() - This method returns the reverse the object on which it is called<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; delete() - This method deletes a sequence of characters from the invoking object. We can also delte single character at a prticular index by using deleteCharAt()<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; replace() - You can replace one set of characters with another set inside a StringBuffer object by calling replace().<br/>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; StringBuilder</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;  StringBuilder is similar to StringBuffer except for one important difference. It is not Synchronized, which means it is not thread-safe. The advantage of StringBuilder is faster performacnace. Incase, s mutable strng will be accessed by multiple threads, and no external  synchronization is employed, you must use StringBuffer rather than StringBuilder.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
