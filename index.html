@@ -420,8 +420,39 @@
                 <div class="col-md-12">
                     <div class="col-md-12 text-center"><h3>ArrayDeque.</h3></div> 
                     <div class="row">
-
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.ArrayDeque class provides resizable-array and implements the Deque interface. The Array Deque
+                                has the following properties.<br/>
+                                1.) ArrayDeques have no capacity restrictions so they grow as necessary to support usage.<br/>
+                                2.) They are not thread safe ; in the absence of extenal synchronization.<br/>
+                                3.) Null elements are prohibited in the array deques.<br/>
+                                4.) They are faster than stack and linkedList. - Because most operations do not require the array to resize,
+                                particularly once the queue has reached a stable size and isn't grouwing any more. Everytime you add an element
+                                Stack has to allocate new objects and update the links. ArrayDeque just needs to put an object in the array
+                                and update the index. <br/>
+                                The class and its iterator implements all of the optional methods of the Collection and Iterator interfaces.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>public class ArrayDeque&lt;E&gt; extends AbstractCollection&lt;E&gt; implements Deque&lt;E&gt;, Cloneable, Seriazable</strong><br/>
+                                &lt;E&gt; represents an Element, which could any class eg, ArrayList.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong> : Inserts the specified element at the end of this deque.</br>
+                                <strong>void addFirst(E e) </strong> : Insert the specified element at the front of this dequeu.<br/>
+                                <strong>void addLast(E e) </strong> : Insert the specified element at the end of this deque.<br/>
+                                <strong>void clear()</strong>: Removes all elements from this dequeu.<br/>
+                                <strong>boolean contains(E e)</strong>: Returns true is the element is present in the deque.<br/>
+                                <strong>E element()</strong>: Retrives, but does not remove the head of the queue represented by this deque.<br/>
+                                <strong>E getFirst()</strong>: Retrives the first element of the deque.<br/>
+                                <strong>E getLast()</strong>: Retrives the last element of the deque.<br/> 
+                                <strong>E peek()</strong>: Retrives the head of the deque.<br/>
+                            </p>
+                        </div>
                     </div>
+                </div><hr/>
+                <div class="col-md-12">
+                    <div class="col-md-12 text-center"><h3>ArrayDeque.</h3></div> 
                 </div>
             </div>
         </section>
