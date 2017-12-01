@@ -761,33 +761,117 @@
                     </div>
                     <!-- Priority Queue -->
                     <div class="col-md-12">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>Priority Queue</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                       The java.util.PriorityQueue class is an unbounded priority queue based on a priority heap.
-                                       1.) The elements of the priority queue are ordered according to their natural ordering or by a Comparator
-                                       provided at the queue construction time, depending on which constructor is used.
-                                       2.) A priority queue does not permit null elements.
-                                       3.) A priority queue relying on natural ordering also does not permit insertion of non-comparable objects.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean add(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
-                                        <strong>void clear()</strong>:This method removes all of the elements from this priority queue.<br/>
-                                        <strong>boolean contains(Object o)</strong>: This method returns true if this queue contains the specified element.<br/>
-                                        <strong>boolean offer(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
-                                        <strong>E peek()</strong>:This method retrieves, but does not remove, the head of this queue, or 
-                                        returns null if this queue is empty.<br/>
-                                        <strong>E poll()</strong>: This method retrieves and removes the head of this queue, or returns null if this queue is empty.<br/>
-                                        <strong>boolean remove(Object o)</strong>: This method removes a single instance of the specified element 
-                                        from this queue, if it is present.<br/>
-                                        <strong>int size()</strong>: This method returns the number of elements in this collection.<br/>
-                                    </p>
-                                </div>
+                        <hr/>
+                        <div class="col-md-12 text-center"><h3>Priority Queue</h3></div> 
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    The java.util.PriorityQueue class is an unbounded priority queue based on a priority heap.
+                                    1.) The elements of the priority queue are ordered according to their natural ordering or by a Comparator
+                                    provided at the queue construction time, depending on which constructor is used.
+                                    2.) A priority queue does not permit null elements.
+                                    3.) A priority queue relying on natural ordering also does not permit insertion of non-comparable objects.
+                                </p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>boolean add(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>void clear()</strong>:This method removes all of the elements from this priority queue.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>boolean contains(Object o)</strong>: This method returns true if this queue contains the specified element.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>boolean offer(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>E peek()</strong>:This method retrieves, but does not remove, the head of this queue, or 
+                                    returns null if this queue is empty.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>E poll()</strong>: This method retrieves and removes the head of this queue, or returns null if this queue is empty.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>boolean remove(Object o)</strong>: This method removes a single instance of the specified element 
+                                    from this queue, if it is present.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>int size()</strong>: This method returns the number of elements in this collection.<br/>
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <!-- Tree Map -->
+                    <div class="col-md-12">
+                        <hr/>
+                        <div class="col-md-12 text-center"><h3>Tree Map</h3></div> 
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    The java.util.TreeMap class is the Red-Black tree based implementation of the Mapinterface.<br/>
+                                    1.) The TreeMap class gurantees that the Map will be in ascending key order.<br/>
+                                    2.) The map is sorted according to the natural sort method for the key Class, or by the Comparator provided 
+                                    at the map creation time, that will depend on which contructor is used.<br/>
+                                </p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K, V &gt; ceilingEntry(K, V)</strong>: This method returns a key-value mapping associated 
+                                    with the least key greater than or equal to the given key, or null if there is no such key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>K ceilingKey(K key)</strong>:This method returns the least key greater than or equal to the
+                                    given key, or null if there is no such key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Comparator&lt;? super K &gt; Comparator()</strong>: This method Returns the comparator used to order 
+                                    the keys in this map, or null if this map uses the natural ordering of its keys.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>boolean containsKey(Object key)</strong>:This method returns true if this map contains a mapping for the specified key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more keys to the specified value.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>NavigableSet&lt;K&gt; descendingKeySet()</strong>:This method returns a reverse order NavigableSet 
+                                    view of the keys contained in this map.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>NavigableMap&lt;K,V&gt; descendingMap()</strong>:This method returns a reverse order view of the mappings contained in this map.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K,V&gt; firstEntry()</strong>: This method returns a key-value mapping associated with the least key 
+                                    in this map, or null if the map is empty.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>K firstKey()</strong>: This method returns the first (lowest) key currently in this map.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>k floorKey(K key)</strong>:This method returns the greatest key less than or equal to the given 
+                                    key, or null if there is no such key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, 
+                                    or null if this map contains no mapping for the key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>SortedMap&lt;K,V&gt; headMap(k toKey)</strong>: This method returns a view of the portion of this map whose keys are 
+                                    strictly less than toKey.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K,V&gt; higherEntry(K Key)</strong>: This method returns the returns a key-value mapping associated 
+                                    with the least key strictly greater than the given key, or null if there is no such key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>k higherKey(K key)</strong>: This method returns the least key strictly greater than the given key, 
+                                    or null if there is no such key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K,V&gt; lastEntry()</strong>: This method returns a key-value mapping associated 
+                                    with the greatest key in this map, or null if the map is empty.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>K lastKey()</strong>: This method returns the last (highest) key currently in this map.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K,V&gt; lowerEntry(k key)</strong>:This method returns a key-value mapping associated with the greatest 
+                                    key strictly less than the given key, or null if there is no such key.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K,V&gt; pollFirstEntry()</strong>:This method removes and returns a key-value mapping associated with 
+                                    the least key in this map, or null if the map is empty.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>Map.Entry&lt;K,V&gt; pollLastEntry()</strong>: This method removes and returns a key-value mapping associated 
+                                    with the greatest key in this map, or null if the map is empty.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>V put(K key, V Value)</strong>: This method associates the specified value with the specified key in this map.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>V remove(Object key)</strong>:This method removes the mapping for this key from this TreeMap if present.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                    <strong>int size()</strong>: This method returns the number of key-value mappings in this map.<br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="importantTopics">
