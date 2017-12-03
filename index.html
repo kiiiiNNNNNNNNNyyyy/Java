@@ -20,6 +20,7 @@
     </style>
 </head>
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,6 +60,7 @@
                         <a class="dropdown-item" href="#linkedlist">LinkedList</a>
                         <a class="dropdown-item" href="#priorityqueue">PriorityQueue</a>
                         <a class="dropdown-item" href="#treemap">TreeMap</a>
+                        <a class="dropdown-item" href="#treeset">TreeSet</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -69,907 +71,976 @@
                     </div>
                 </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+    
+    <div class="container">
         
-        <div class="container">
-            <section id="oop">
-                <div class="row">
+        <!---- oops -->
+        <section id="oop">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <div class="primary text-center"><span class="text-success"><h1>Object Oritented Programming</h1></span></div>
+                    <hr />
                     <div class="col-md-12">
+                        <h3><i class="fa fa-certificate fa-lg"></i></span>&nbsp;Object Oritented Programming Paradigms</h3>
                         <hr />
-                        <div class="primary text-center"><span class="text-success"><h1>Object Oritented Programming</h1></span></div>
-                        <hr />
-                        <div class="col-md-12">
-                            <h3><i class="fa fa-certificate fa-lg"></i></span>&nbsp;Object Oritented Programming Paradigms</h3>
-                            <hr />
-                            
-                            <div class="col-offset-1 col-md-12">
-                                <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Abstraction</h4>
-                                <div clas   s="col-offset-1 col-md-11">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                        Removing the irrelevant and keeping only the essentials.
-                                        A powerful way to manage abstraction is trhough the use of hierarchial classifications.  
-                                    </p>
-                                </div>
+                        
+                        <div class="col-offset-1 col-md-12">
+                            <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Abstraction</h4>
+                            <div clas   s="col-offset-1 col-md-11">
+                                <p>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                    Removing the irrelevant and keeping only the essentials.
+                                    A powerful way to manage abstraction is trhough the use of hierarchial classifications.  
+                                </p>
                             </div>
-                            
-                            <div class="col-offset-1 col-md-12">
-                                <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Encapsulation</h4>
-                                <div class="col-offset-1 col-md-11">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                        Encapsulation is the mechanism that binds together the code and the data it manipulates, and keeps both safe from
-                                        outside interference and misuse. Access to the code and the data inside the wrapper is tightly controlled through a well defined
-                                        interface. When you create a class, you will specify the code and the data that constitutes the class. Collectively, these elements
-                                        are called the members of the class.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-offset-1 col-md-12">
-                                <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Inheritance</h4>
-                                <div class="col-offset-1 col-md-11">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                        Inheritance is the process by which one object acquires the properties of another object. It supports the concept of hierarhical 
-                                        classification. Inheritance interacts with encapsulation as well. If a given class encapsulates some attributes, then any
-                                        subclass will have the same attributes plus any that it adds as part of its specialization. Aa new subclass inherits all the 
-                                        attribute of its ancestor.
-                                    </p>
-                                </div>
-                            </div>
-                            
+                        </div>
+                        
+                        <div class="col-offset-1 col-md-12">
+                            <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Encapsulation</h4>
                             <div class="col-offset-1 col-md-11">
-                                <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Polymorphism</h4>
-                                <div class="col-offset-1 col-md-11">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                        Polymorphism is a feature that allows one interface to be used for a general class of actions. In simpler words' "Some
-                                        features, different behaviors." Therefore, polymorphism is the property of the object to take on many forms. 
-                                    </p>
-                                </div>
+                                <p>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                    Encapsulation is the mechanism that binds together the code and the data it manipulates, and keeps both safe from
+                                    outside interference and misuse. Access to the code and the data inside the wrapper is tightly controlled through a well defined
+                                    interface. When you create a class, you will specify the code and the data that constitutes the class. Collectively, these elements
+                                    are called the members of the class.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-offset-1 col-md-12">
+                            <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Inheritance</h4>
+                            <div class="col-offset-1 col-md-11">
+                                <p>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                    Inheritance is the process by which one object acquires the properties of another object. It supports the concept of hierarhical 
+                                    classification. Inheritance interacts with encapsulation as well. If a given class encapsulates some attributes, then any
+                                    subclass will have the same attributes plus any that it adds as part of its specialization. Aa new subclass inherits all the 
+                                    attribute of its ancestor.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-offset-1 col-md-11">
+                            <h4><i class="fa fa-lg fa-star"></i></span>&nbsp; Polymorphism</h4>
+                            <div class="col-offset-1 col-md-11">
+                                <p>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                    Polymorphism is a feature that allows one interface to be used for a general class of actions. In simpler words' "Some
+                                    features, different behaviors." Therefore, polymorphism is the property of the object to take on many forms. 
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            <hr/>
-            <section id="classes">
-                <div class="row">
-                    <hr/>
-                    <div class="text-center"><span class="text-warning"><h1 class="text-center">Classes</h1></span></div>
-                    <hr/>
+            </div>
+        </section>
+        
+        <hr/>
+        
+        <!-- classes -->
+        <section id="classes">
+            <div class="row">
+                <hr/>
+                <div class="text-center"><span class="text-warning"><h1 class="text-center">Classes</h1></span></div>
+                <hr/>
+                
+                <div class="col-md-12">
+                    <h3><span><i class="fa fa-certificate fa-lg"></i></span>&nbsp;Class</h3>
+                    <hr />
                     
-                    <div class="col-md-12">
-                        <h3><span><i class="fa fa-certificate fa-lg"></i></span>&nbsp;Class</h3>
-                        <hr />
-                        
-                        <div class="col-offset-1 col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                    A class is a template for an object, and an object is an instance of a class. Because an object is an instance of a class,
-                                    object and instance are alomst same. Data or variables defied inside the class are called instance variables.  
-                                </p>
-                            </div>
-                        </div>
-                        
+                    <div class="col-offset-1 col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
                         <div class="col-offset-1 col-md-11">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; The this keyword</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                    'this' can be used inside any method to refer to the current object. 'this' is always the reference to the
-                                    object on which the method is invoked. You can use 'this' anywhere a reference to an object of the current 
-                                    class is permmitted.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-offset-1 col-md-11">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Garbage Collection</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                    Objects are dynamically created in java by using the 'new' operator. Java handles deallocation autommmatically. Where no references to an object exists, that object is assumed to be no longer needed, and the memory occupied by the pobject can be used. There is no explicit need to destroy the objects as in C++. 
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-offset-1 col-md-11">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Finalize() method</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                    Sometimes an object will no need to perform some action when it is destroyed. For eg, if an object is holding some non-java resources such as a file handle or character font, then you might want to make sure these resources are freed before an object is destroyed. To handle such situations, java provides a mechanism called finalization. By using finalization, you can define specific actions that will occur when the object's memory is just about to be reclaimed by the garbage collector.
-                                </p>
-                            </div>
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                A class is a template for an object, and an object is an instance of a class. Because an object is an instance of a class,
+                                object and instance are alomst same. Data or variables defied inside the class are called instance variables.  
+                            </p>
                         </div>
                     </div>
                     
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; The this keyword</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                'this' can be used inside any method to refer to the current object. 'this' is always the reference to the
+                                object on which the method is invoked. You can use 'this' anywhere a reference to an object of the current 
+                                class is permmitted.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Garbage Collection</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                Objects are dynamically created in java by using the 'new' operator. Java handles deallocation autommmatically. Where no references to an object exists, that object is assumed to be no longer needed, and the memory occupied by the pobject can be used. There is no explicit need to destroy the objects as in C++. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Finalize() method</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                Sometimes an object will no need to perform some action when it is destroyed. For eg, if an object is holding some non-java resources such as a file handle or character font, then you might want to make sure these resources are freed before an object is destroyed. To handle such situations, java provides a mechanism called finalization. By using finalization, you can define specific actions that will occur when the object's memory is just about to be reclaimed by the garbage collector.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <h3><i class="fa fa-certificate fa-lg"></i></span>&nbsp;String Class</h3>
+                    <hr />
+                    
+                    <div class="col-offset-1 col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                The most important thing to remember about strings in java is that strings are immutable. Once a String object is created,  its content cannot be altered. To alter Strings, Java defines peer classes of String, called StringBuffer and StringBuilder, which allows strings to be altered. Both these classes are available in java.lang package. All three (String, StringBuffer and StringBuilder) implements the CharSequence interface.
+                            </p>
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;charAt() - To extract a single character from a string, you can refer directly to an individual characters via charAt() method.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getChars() - If you need to extract more than one character at a time, you can use getChars().<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getBytes() - This is an alternative to getChars() that stores the characters in an array of bytes. It uses the default character-to-byte conversions provided by the platform.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;regionMatches() - The regionMatches() method comparesa specific region inside a string with another specific region in another string. It returns true or false. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;startsWith() - The startsWith() method determines whether a given String begins with a specified string. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;endsWith() - The endsWith() determines whether the string given ends with a specified string.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; equals() Versus == - The equals method compares the characters inside a String object. The == operator compates two object references to see whether they refer to the same instance. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; indexOf() - The indexOf() function searches for the first occurrence of a character or a substring.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; lastIndexOf() - The indexOf() function searches for the last occurrence of a character or a substring.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; substring() -  This functions returns a copy of the substring that begins at startIndex and runs to the end of the invoking string or the mentioned the lastIndex. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;trim() - The trim method returns a copy of the invoking string from which any leading and trailing whitespace has been removed. <br> 
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; join() - This method is used to concatenate two or more strings, seprating each string with a delimiter, such as a comma or a colon, depending on input.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Some other useful functions - isEmpty(), replaceFirst(), replaceAll(), split(). <br/>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; StringBuffer</h4>
+                        <div class="col-offset-1 col-md-12">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
+                                StringBuffer supports modifiable strings. StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The current length of a StringBuffer can be found via the length() method, while the total allocated capacity can be found through the capacity() method. <br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; ensureCapacity() - This method can set the size of the buffer. This is useful if you know in advane that you will be appending a large number of small strings to  StringBuffer<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; setLength() - To set the length of the string within a StringBuffer ibject, we have to use setLength()<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; setChatAt() - StringBuffer allows to set the character at a particular point which we can get using chatAt() or getChars()<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; append() - This method concatenates the string representation of any other type of data to the end of the invoking StringBuffer object.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; insert() - This method inserts one string into another. It is overloaded to accept values of all the primitive types, plus Strings, Objects, and CharSequence.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; reverse() - This method returns the reverse the object on which it is called<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; delete() - This method deletes a sequence of characters from the invoking object. We can also delte single character at a prticular index by using deleteCharAt()<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; replace() - You can replace one set of characters with another set inside a StringBuffer object by calling replace().<br/>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-offset-1 col-md-11">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; StringBuilder</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;  StringBuilder is similar to StringBuffer except for one important difference. It is not Synchronized, which means it is not thread-safe. The advantage of StringBuilder is faster performacnace. Incase, s mutable strng will be accessed by multiple threads, and no external  synchronization is employed, you must use StringBuffer rather than StringBuilder.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Inheritance -->
+        <section id="inheritance">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <div class="primary text-center"><span class="text-primary"><h1>Inheritance</h1></span></div>
+                    <hr />
                     <div class="col-md-12">
-                        <h3><i class="fa fa-certificate fa-lg"></i></span>&nbsp;String Class</h3>
+                        <h3><i class="fa fa-certificate fa-lg"></i></span>&nbsp; Inheritance Basics</h3>
                         <hr />
                         
-                        <div class="col-offset-1 col-md-12">
+                        <div class="col-md-12">
                             <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                    The most important thing to remember about strings in java is that strings are immutable. Once a String object is created,  its content cannot be altered. To alter Strings, Java defines peer classes of String, called StringBuffer and StringBuilder, which allows strings to be altered. Both these classes are available in java.lang package. All three (String, StringBuffer and StringBuilder) implements the CharSequence interface.
-                                </p>
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;charAt() - To extract a single character from a string, you can refer directly to an individual characters via charAt() method.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getChars() - If you need to extract more than one character at a time, you can use getChars().<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;getBytes() - This is an alternative to getChars() that stores the characters in an array of bytes. It uses the default character-to-byte conversions provided by the platform.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;regionMatches() - The regionMatches() method comparesa specific region inside a string with another specific region in another string. It returns true or false. <br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;startsWith() - The startsWith() method determines whether a given String begins with a specified string. <br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;endsWith() - The endsWith() determines whether the string given ends with a specified string.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; equals() Versus == - The equals method compares the characters inside a String object. The == operator compates two object references to see whether they refer to the same instance. <br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; indexOf() - The indexOf() function searches for the first occurrence of a character or a substring.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; lastIndexOf() - The indexOf() function searches for the last occurrence of a character or a substring.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; substring() -  This functions returns a copy of the substring that begins at startIndex and runs to the end of the invoking string or the mentioned the lastIndex. <br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;trim() - The trim method returns a copy of the invoking string from which any leading and trailing whitespace has been removed. <br> 
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; join() - This method is used to concatenate two or more strings, seprating each string with a delimiter, such as a comma or a colon, depending on input.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Some other useful functions - isEmpty(), replaceFirst(), replaceAll(), split(). <br/>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-offset-1 col-md-11">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; StringBuffer</h4>
                             <div class="col-offset-1 col-md-12">
                                 <p>
                                     <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                    StringBuffer supports modifiable strings. StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end. <br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The current length of a StringBuffer can be found via the length() method, while the total allocated capacity can be found through the capacity() method. <br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; ensureCapacity() - This method can set the size of the buffer. This is useful if you know in advane that you will be appending a large number of small strings to  StringBuffer<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; setLength() - To set the length of the string within a StringBuffer ibject, we have to use setLength()<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; setChatAt() - StringBuffer allows to set the character at a particular point which we can get using chatAt() or getChars()<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; append() - This method concatenates the string representation of any other type of data to the end of the invoking StringBuffer object.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; insert() - This method inserts one string into another. It is overloaded to accept values of all the primitive types, plus Strings, Objects, and CharSequence.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; reverse() - This method returns the reverse the object on which it is called<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; delete() - This method deletes a sequence of characters from the invoking object. We can also delte single character at a prticular index by using deleteCharAt()<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; replace() - You can replace one set of characters with another set inside a StringBuffer object by calling replace().<br/>
+                                    You can inherit a class by using the extends keyword.  <br/>
+                                    
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Although a subclass includes all of the members of its superclass, it cannot access those members of the superclass that have been declared as private. A reference variable of super class can be assigned a reference to any subclass derived from that superclass. Whenever a subclass needs to refer to its immediate superclass, it can do it so by use of the keyword super.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Super has two general forms first calls the superclass Contructor and the second is used to access a member of the superclass that has been hidden by a member of a subclass. The second use of Super acts somewhat like 'this', except that it always refers to the superclass of the subclass i which it is used. Whether or the not the super() is used the contructor of the super class is created. If the super is not used then the default paramertless contructor of the super class is used.<br/>
                                 </p>
                             </div>
                         </div>
                         
+                        <div class="col-md-12">
+                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Abstract Classes</h4>
+                            <div class="col-offset-1 col-md-12">
+                                <p>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;There are situations in which you will want to define a superclass that declares the structure of a given abstraction without providing a complete implementation of every method. That is, sometimes you will need to create a superclass that only defines a generalized form that will be shared by all of its subclasses, leaving it to each subclass to fill in the details. Such a class determines the nature of methods that the subclass must implement.<br/>
+                                    
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;You can require that certain methods be overridden by subclasses by specifying the abstract type modifier. Thus, a subclass must override these abstract functions. <br/>
+                                    
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; To declare a class abstract, you can simply use the keyword abstract in front of the class.<br/>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Final Keyword</h4>
+                            <div class="col-offset-1 col-md-12">
+                                <p>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;The final keyword has three uses.It can be used to create the equivalent of a named constant. The other two uses of final apply to inheritance. Using final will prevent method overrinding. Methods decalres as final cannot be overridden.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Sometimes, you want to prevent a class from being inherited. Precede the class declaration with final. Declaring a class as final will implicitly declares all of its method as final too. <br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; It is illegal to declare a class as both final and abstract since an abstract class is incomplete by itself and relies upon its subclasses to provide complete implementations.<br/>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Package and Interfaces -->
+        <section id="packagesAndInterface">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <div class="primary text-center"><span class="text-danger"><h1>Packages and Interface</h1></span></div>
+                    <hr />
+                    
+                    <div class="col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Packages</h4>
+                        <div class="col-offset-1 col-md-12">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Packages are containers for classes. They are used to keep the class name space compartmentalized.You can define classes inside packages which are not accessible by code outside that package. you can also declare class members that are exposed only to other members of the same package. This allows your classes to have intimate knowledge of each other, but not expose to that knowledge to the rest of the world.<br/>
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Packages in Java are simply a mechanism used to organize classes and prevent class name collisions.<br/>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Interfaces</h4>
+                        <div class="col-offset-1 col-md-12">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;You can fully abstract a class by using the keyword interface. Using interface you can specify a set of methods that can be implemented by one or more classes. Although they are similar to abstract classes, interfaces have an aditional capability. A class can implement more than one interface.<br/>
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Interfaces are syntactically similar to classes but they lack instance variables, and as a general rule, their methods are decalred without any body. <br/>
+                            </p>
+                        </div>
+                        
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Nested Interfaces</h4>
+                        <div class="col-offset-1 col-md-12">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;An Interface can be decalared a member of a class or another interface. Such an interface is called a member interfac or a nested interface. A nested interface can be declared as public, private or protected. When a nested interface is used outside of its enclosing scope, it must be qualified by the name of the class or interface of which it is a member.<br/>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr/>
+        
+        <!-- Multithreading -->
+        <section id="Multithreading">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <div class="primary text-center"><span class="text-info"><h1>Multithreading</h1></span></div>
+                    <hr />
+                    
+                    <div class="col-offset-1 col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Terminologies</h4>
                         <div class="col-offset-1 col-md-11">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; StringBuilder</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;  StringBuilder is similar to StringBuffer except for one important difference. It is not Synchronized, which means it is not thread-safe. The advantage of StringBuilder is faster performacnace. Incase, s mutable strng will be accessed by multiple threads, and no external  synchronization is employed, you must use StringBuffer rather than StringBuilder.
-                                </p>
-                            </div>
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A multithreaded programs contains two or more parts that can run concurrently. A process is a program that is executing. Each part of such a program is called a thread. There are two distinct type of multitasking.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;A process basesd multitasking is a feature that allows your computer to run two or more programs concurrently. In this, a program is the smallest unit of code that can be dispatched by the scheduler.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; In a thread based multitasking, the thread is the smallest unit of dispatchable code. That means a single code can two or more tasks simultaneously.<br/>
+                            </p>
+                        </div>
+                    </div>  
+                    
+                    <div class="col-offset-1 col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Thread Priorities</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Java assigns to each thread a priority that determines how that thread should be treated with respect to the others. Thread priorities are integer that specify the relative priority of one thread to another.Thread priority is used to decide when to switch from one running thread to the next. This is called context switch. The rules that determine when a context switch should take place are simple and as follows: -<br/>
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A thread can voluntarily relinquish control. This is done by explicitly yielding, sleeping, or blocking on pending I/O. In this scenarios, all the threads are examined, and the highest priority thread that is ready to run is given the CPU.
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A thread can be preempted by a higher priority thread. In this case, a lower priority thread that does not yield the processor is simply preempted - no matter what it is doing - by a higher priority thread.This is called preemptive multitasking.
+                            </p>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-offset-1 col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Synchronization</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Because multithreading introduces an asynchronous behaviour to you programs, there must be a way for you to enforce synchronicity when you needit. To enter an object's monitor just call a method that has been modified with the sychronized keyword. While a thread is inside a sybchri=onized method, all other threads that try to call it on the same instance have to wait.<br/>
+                            </p>
                         </div>
                         
-                    </div>
-                </div>
-            </section>
-            
-            <section id="inheritance">
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr />
-                        <div class="primary text-center"><span class="text-primary"><h1>Inheritance</h1></span></div>
-                        <hr />
-                        <div class="col-md-12">
-                            <h3><i class="fa fa-certificate fa-lg"></i></span>&nbsp; Inheritance Basics</h3>
-                            <hr />
-                            
-                            <div class="col-md-12">
-                                <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Fundamentals</h4>
-                                <div class="col-offset-1 col-md-12">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; 
-                                        You can inherit a class by using the extends keyword.  <br/>
-                                        
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Although a subclass includes all of the members of its superclass, it cannot access those members of the superclass that have been declared as private. A reference variable of super class can be assigned a reference to any subclass derived from that superclass. Whenever a subclass needs to refer to its immediate superclass, it can do it so by use of the keyword super.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Super has two general forms first calls the superclass Contructor and the second is used to access a member of the superclass that has been hidden by a member of a subclass. The second use of Super acts somewhat like 'this', except that it always refers to the superclass of the subclass i which it is used. Whether or the not the super() is used the contructor of the super class is created. If the super is not used then the default paramertless contructor of the super class is used.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-12">
-                                <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Abstract Classes</h4>
-                                <div class="col-offset-1 col-md-12">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;There are situations in which you will want to define a superclass that declares the structure of a given abstraction without providing a complete implementation of every method. That is, sometimes you will need to create a superclass that only defines a generalized form that will be shared by all of its subclasses, leaving it to each subclass to fill in the details. Such a class determines the nature of methods that the subclass must implement.<br/>
-                                        
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;You can require that certain methods be overridden by subclasses by specifying the abstract type modifier. Thus, a subclass must override these abstract functions. <br/>
-                                        
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; To declare a class abstract, you can simply use the keyword abstract in front of the class.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-12">
-                                <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Final Keyword</h4>
-                                <div class="col-offset-1 col-md-12">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;The final keyword has three uses.It can be used to create the equivalent of a named constant. The other two uses of final apply to inheritance. Using final will prevent method overrinding. Methods decalres as final cannot be overridden.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Sometimes, you want to prevent a class from being inherited. Precede the class declaration with final. Declaring a class as final will implicitly declares all of its method as final too. <br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; It is illegal to declare a class as both final and abstract since an abstract class is incomplete by itself and relies upon its subclasses to provide complete implementations.<br/>
-                                        
-                                    </p>
-                                </div>
-                            </div>
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Interthread Communication</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;To avoid polling, java includes an elegant interprocess communication mechanism via the wait(), notify() and notifyAll() methods. These methods are implemented as final method in Object All three methods can only be called from within a synchronized context.<br/>
+                            </p>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <section id="packagesAndInterface">
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr />
-                        <div class="primary text-center"><span class="text-danger"><h1>Packages and Interface</h1></span></div>
-                        <hr />
-                        
-                        <div class="col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Packages</h4>
-                            <div class="col-offset-1 col-md-12">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Packages are containers for classes. They are used to keep the class name space compartmentalized.You can define classes inside packages which are not accessible by code outside that package. you can also declare class members that are exposed only to other members of the same package. This allows your classes to have intimate knowledge of each other, but not expose to that knowledge to the rest of the world.<br/>
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Packages in Java are simply a mechanism used to organize classes and prevent class name collisions.<br/>
-                                </p>
-                            </div>
+                    
+                    <div class="col-offset-1 col-md-12">
+                        <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Creating a thread</h4>
+                        <div class="col-offset-1 col-md-11">
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;In most general cases, you can create a thread by instantiating an object of type Thread. Java defines two ways in which this can be accompolished - By implementing the Runnable inerface or - by extending the thread class.<br/>
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;The easiest way to create a thread is to create a class that implements the Runnable interface. Runnable abstracts a unit of executable code. You can construct a thread on any object that implements Runnable. To implement runnable, a class only need to implement a single method called run(). Inside run(), you will define the code that consitutes the new thread. <br/>
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The second way is to extend the thread class and then create an instance of that class. The extending class must override the run() method, which is the entry point for the new thread. It must also call start() to begin execution of the new thread.<br/> 
+                                
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;IsAlive() and join() - Thread provides a means to chek if a thread is alive or not. Two ways exists to check if the thread has finished or not. First, you can call isAlive() on the thread. The second method is called join(), which waits for a thread to finish. This method waits until the thread on which it is wroking has finished.<br/>                        
+                            </p>
                         </div>
-                        
-                        <div class="col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Interfaces</h4>
-                            <div class="col-offset-1 col-md-12">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;You can fully abstract a class by using the keyword interface. Using interface you can specify a set of methods that can be implemented by one or more classes. Although they are similar to abstract classes, interfaces have an aditional capability. A class can implement more than one interface.<br/>
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Interfaces are syntactically similar to classes but they lack instance variables, and as a general rule, their methods are decalred without any body. <br/>
-                                </p>
-                            </div>
-                            
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Nested Interfaces</h4>
-                            <div class="col-offset-1 col-md-12">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;An Interface can be decalared a member of a class or another interface. Such an interface is called a member interfac or a nested interface. A nested interface can be declared as public, private or protected. When a nested interface is used outside of its enclosing scope, it must be qualified by the name of the class or interface of which it is a member.<br/>
-                                    
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr/>
-            
-            <section id="Multithreading">
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr />
-                        <div class="primary text-center"><span class="text-info"><h1>Multithreading</h1></span></div>
-                        <hr />
                         
                         <div class="col-offset-1 col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Terminologies</h4>
+                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Thread States</h4>
                             <div class="col-offset-1 col-md-11">
                                 <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A multithreaded programs contains two or more parts that can run concurrently. A process is a program that is executing. Each part of such a program is called a thread. There are two distinct type of multitasking.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;A process basesd multitasking is a feature that allows your computer to run two or more programs concurrently. In this, a program is the smallest unit of code that can be dispatched by the scheduler.<br/>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; In a thread based multitasking, the thread is the smallest unit of dispatchable code. That means a single code can two or more tasks simultaneously.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;BLOCKED - A thread that has suspended execution because it is waiting to aquire a lock.<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;NEW - A thread that has not begun execution<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;RUNNABLE - A thread that either is currently executing or will execute when it gains access to the CPU<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;TERMINATED - A thread that has completed execution<br/><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;TIMED_WAITING - A thread that has suspended execution for a specified amount of time , such has when it has called sleep().<br/>
+                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;WAITING - A thread that has suspended execution because it is waiting for some action to occur.<br/>                       
                                 </p>
                             </div>
                         </div>  
-                        
-                        <div class="col-offset-1 col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Thread Priorities</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Java assigns to each thread a priority that determines how that thread should be treated with respect to the others. Thread priorities are integer that specify the relative priority of one thread to another.Thread priority is used to decide when to switch from one running thread to the next. This is called context switch. The rules that determine when a context switch should take place are simple and as follows: -<br/>
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A thread can voluntarily relinquish control. This is done by explicitly yielding, sleeping, or blocking on pending I/O. In this scenarios, all the threads are examined, and the highest priority thread that is ready to run is given the CPU.
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A thread can be preempted by a higher priority thread. In this case, a lower priority thread that does not yield the processor is simply preempted - no matter what it is doing - by a higher priority thread.This is called preemptive multitasking.
-                                </p>
-                            </div>
-                        </div> 
-                        
-                        <div class="col-offset-1 col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Synchronization</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Because multithreading introduces an asynchronous behaviour to you programs, there must be a way for you to enforce synchronicity when you needit. To enter an object's monitor just call a method that has been modified with the sychronized keyword. While a thread is inside a sybchri=onized method, all other threads that try to call it on the same instance have to wait.<br/>
-                                </p>
-                            </div>
-                            
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Interthread Communication</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;To avoid polling, java includes an elegant interprocess communication mechanism via the wait(), notify() and notifyAll() methods. These methods are implemented as final method in Object All three methods can only be called from within a synchronized context.<br/>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-offset-1 col-md-12">
-                            <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Creating a thread</h4>
-                            <div class="col-offset-1 col-md-11">
-                                <p>
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;In most general cases, you can create a thread by instantiating an object of type Thread. Java defines two ways in which this can be accompolished - By implementing the Runnable inerface or - by extending the thread class.<br/>
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;The easiest way to create a thread is to create a class that implements the Runnable interface. Runnable abstracts a unit of executable code. You can construct a thread on any object that implements Runnable. To implement runnable, a class only need to implement a single method called run(). Inside run(), you will define the code that consitutes the new thread. <br/>
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The second way is to extend the thread class and then create an instance of that class. The extending class must override the run() method, which is the entry point for the new thread. It must also call start() to begin execution of the new thread.<br/> 
-                                    
-                                    <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;IsAlive() and join() - Thread provides a means to chek if a thread is alive or not. Two ways exists to check if the thread has finished or not. First, you can call isAlive() on the thread. The second method is called join(), which waits for a thread to finish. This method waits until the thread on which it is wroking has finished.<br/>                        
-                                </p>
-                            </div>
-                            
-                            <div class="col-offset-1 col-md-12">
-                                <h4><span><i class="fa fa-lg fa-star"></i></span>&nbsp; Thread States</h4>
-                                <div class="col-offset-1 col-md-11">
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;BLOCKED - A thread that has suspended execution because it is waiting to aquire a lock.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;NEW - A thread that has not begun execution<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;RUNNABLE - A thread that either is currently executing or will execute when it gains access to the CPU<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;TERMINATED - A thread that has completed execution<br/><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;TIMED_WAITING - A thread that has suspended execution for a specified amount of time , such has when it has called sleep().<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;WAITING - A thread that has suspended execution because it is waiting for some action to occur.<br/>                       
-                                    </p>
-                                </div>
-                            </div>  
-                        </div>
                     </div>
-                </section>
-                
-                <section id="javautils">
-                    <div class="row">
-                        <!-- Heading -->
-                        <div class="col-md-12" id="">
-                            <hr />
-                            <div class="primary text-center"><span class="text-warning"><h1>Java.Utils</h1></span></div>
-                            <hr />
-                        </div> 
-                        <!-- ArrayDeque -->
-                        <div class="col-md-12" id="arraydeque">
-                            <div class="col-md-12 text-center"><h3>ArrayDeque.</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.ArrayDeque class provides resizable-array and implements the Deque interface. The Array Deque
-                                        has the following properties.<br/>
-                                        1.) ArrayDeques have no capacity restrictions so they grow as necessary to support usage.<br/>
-                                        2.) They are not thread safe ; in the absence of extenal synchronization.<br/>
-                                        3.) Null elements are prohibited in the array deques.<br/>
-                                        4.) They are faster than stack and linkedList. - Because most operations do not require the array to resize,
-                                        particularly once the queue has reached a stable size and isn't grouwing any more. Everytime you add an element
-                                        Stack has to allocate new objects and update the links. ArrayDeque just needs to put an object in the array
-                                        and update the index. <br/>
-                                        The class and its iterator implements all of the optional methods of the Collection and Iterator interfaces.<br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>public class ArrayDeque&lt;E&gt; extends AbstractCollection&lt;E&gt; implements Deque&lt;E&gt;, Cloneable, Seriazable</strong><br/>
-                                        &lt;E&gt; represents an Element, which could any class eg, ArrayList.
-                                    </p>
-                                    <p>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean add(E e)</strong> : Inserts the specified element at the end of this deque.</br>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void addFirst(E e) </strong> : Insert the specified element at the front of this dequeu.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void addLast(E e) </strong> : Insert the specified element at the end of this deque.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: Removes all elements from this dequeu.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean contains(E e)</strong>: Returns true is the element is present in the deque.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E element()</strong>: Retrives, but does not remove the head of the queue represented by this deque.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E getFirst()</strong>: Retrives the first element of the deque.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E getLast()</strong>: Retrives the last element of the deque.<br/> 
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E peek()</strong>: Retrives the head of the deque.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><hr/>
-                        <!-- ArrayList -->
-                        <div class="col-md-12" id="arraylist">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>ArrayList</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.ArrayList class provides resizable-array and implements the List interface.<br/>
-                                        1.) It implements all the optional list operations and it also permits all elements, including null.<br/>
-                                        2.) It provides method to manipulate the size of the array that is used internally to store the list.<br/>
-                                        3.) The constant factor is low compared to that for the linkedList implementation.<br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean add(E e)</strong>: The method appends the specified element to the end of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void add(int index, E element)</strong>: The methods inserts the element at the specified position of the list<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean addAll(Collection &lt;?extends E &gt; c)</strong>: This method appends all of the elements in the specified 
-                                        collection to the end of this list, in order that they are returned by the specified collection's Iterator.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolead addAll( int index, Collection &lt;?extends E &gt; c )</strong>: This methods inserts all of the specified
-                                        collection into this list, starting at the specified position.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>void clear()</strong>: This method removes all of the elements from the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>Object Clone()</strong>: This methods returns a shallow copy of this ArrayList instance.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean contains(Object o)</strong>: This methds returns true if the list contains the specified element.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void ensureCapacity(int minCapacity)</strong>: This increases the capacity of the ArrayList.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E get(int index)</strong>: This method returns the element at the specified position.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int lastIndexOf(Object o)</strong>: This method returns the index of the last occurance of the specified
-                                        element in the list, or -1 if this list does not contain the element.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean isEmpty()</strong>: Returns true if the list is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E remove(int index)</strong>: This methods removes the element at the specified position in the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>protected void removeRange(int fromIndex, int toIndex)</strong>: This methods removes from this list all of the 
-                                        elements whose index is between fromIndex(inclusive) and toIndex(exclusive).
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E set(int index, E element)</strong>: This method replaces the element at the specified position with the specified 
-                                        element.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- EnumMap -->
-                        <div class="col-md-12" id="enummap">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>EnumMap</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.EnumMap class is a specialized Map implementation for use with enum keys.<br/>
-                                        1.) All of the keys in an enum map must come from a single enum type that is specified, explicitly or implicitly.<br/>
-                                        2.) Enum maps are maintained in the natural order of their keys.<br/>
-                                        3.) Enum map are not synchronized.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>EnumMap(Class &lt;K&gt; keyType)</strong>: Creates an empty enum map with the specified key type.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This methods removes all mapings from the map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>EnumMap &lt;K,V&gt; clone()</strong>: This method returns a shallow copy of the enums.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsKey(Object key)</strong>: This methods returns true if this map contains a maping of
-                                        the specified key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more keys to 
-                                        the specified value<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Set&lt;Map.Entry&lt;K,V&gt;&gt; entrySet()</strong>: This methods returns a set view of the mappings contained
-                                        in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean equals(Object o)</strong>:This methods compares the specified object with this map for equality.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>V get()</strong>: This method returns the value to which the specified key is mapped,or null if the map contains
-                                        no mapping for that key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>V put()</strong>: This method associates the specified value with the specified key in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>void putAll(Map&lt;? extends K,? extends V &gt;m)</strong>: This method copies all of the mappings from the specified 
-                                        map to this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>V remove(Object key)</strong>: This method removes the mapping for this key from this map if present.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
-                                        <strong>int size()</strong>: This method returns the number of key-value mapping in the map.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- HashMap -->
-                        <div class="col-md-12" id="hashmap">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>HashMap</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.HashMap class is the hash table based implementation of the Map interface.<br/>
-                                        1.) The class makes no gurantees as to the iteration order of the map.<br/>
-                                        2.) This class permits null values and the null key.<br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Object clone()</strong>: This method returns a shallow copy this HashMap instance , the keys and values
-                                        themselves are not clones.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsKey(Object key)</strong>: This method returns true if this map contains a mapping for the
-                                        specified key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsValue(Object value)</strong>: This methods returns true if this map maps one more keys
-                                        to the specified value.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, or null 
-                                        if this map contains no mapping for that key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean isEmpty()</strong>: This method returns true if this map contains no key-value pair.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Set&lt;K&gt; keySet()</strong>: This method returns a set view of the keys contained in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V put(K key, V value)</strong>: This method associates the specified value with the specified key
-                                        int this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void putAll(Map&lt;?extends K,? extends V&gt;m)</strong>: This method copies all of the mappings from the specified
-                                        map to this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V remove(Object key)</strong>:This method removes the mappings for the specified key from this map if
-                                        present.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- HashSet -->
-                        <div class="col-md-12" id="hashset">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>HashSet</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.HashSet class implements the Set interface, backed by a hash table.<br/>
-                                        1.) This class makes no gurantees as to the iteration order  of the set.<br/>
-                                        2.) The class permits the null elements.</br.>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean add(E e)</strong>: This method adds the specified element to this set if its not already present.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This method removes all of the elements from this Set<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean contains(Object o)</strong>: This method returns true if this sset contains the specified element.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean isEmpty()</strong>: This method returns true if the set is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean remove(Object o)</strong>: This method removes the specified element fro this set if it is present.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int size()</strong>: This method returns the size of the hashSet.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- HashTable -->
-                        <div class="col-md-12" id="hashtable">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>HashTable</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.Hashtable class implements a HashTable which maps keys to values.<br/>
-                                        1.) In this any non-null object can be used as a key or value pair.<br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This method removes all of the elements from this Set<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean contains(Object value)</strong>: This method returns true if this table contains the specified value.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsKey(Object key)</strong>: This method returns true if this table contains the specified key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean isEmpty()</strong>: This method returns true if the set is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V remove(Object key)</strong>: This method removes the key from this hashtable if it is present.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int size()</strong>: This method returns the size of the hashSet.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V get(Object key)</strong>:This method returns the value to which the specified key is mapped, or null if this map
-                                        contains no mapping for the key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int hashCode()</strong>: This method returns the hash code value for this map as per the defination in the Map interface.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V put(K Key, V value)</strong>: This method maps the specified key to the specified value in this hashtable.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void putAll(Map&lt;?extends K,? extends V &gt; t)</strong>: This method copies all of the mappings from the specified map to this
-                                        hashtable.<br/> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- LinkedHashMap -->
-                        <div class="col-md-12" id="linkedhashmap">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>LinkedHashMap</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.LinkedHashMap is a HashTable and LinkedList implementation of the Map interface, with 
-                                        predicatable iteration order.<br/>
-                                        1.) The class provides all of the optional Map operations, and permits null elements.<br/>
-                                        2.) The iteration over a HashMap is likely to be more expensive.<br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more
-                                        keys to the specified value.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, or
-                                        the null if this map contains no mapping for the key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>protected boolean removeEldestEntry(Map.Entry&lt;K,V&gt; eldest)</strong>: This method returns true
-                                        if this map should remove its eldest entry.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- LinkedList -->
-                        <div class="col-md-12" id="linkedlist">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>LinkedList</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.LinkedList class operations perform we can expect for a doubly-linked list. Operations that
-                                        index into the list will traverse the list from the beginning or the end, whichever is closer to the specfied index. 
-                                        <br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean add(E e)</strong>: This method appends the specified element to the end of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void add(int index, E element)</strong>: This method inserts the specified element at the specified position
-                                        in the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean addAll(Collection&lt;?extends E&gt;c)</strong>:This method appends all of the elements in the specified
-                                        collection to the end of the list, in the order that they are returned by the specified collection's iterator.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean addAll(int index, Collection&lt;?extends E&gt;c)</strong>: This methods inserts all the elements in the specfied
-                                        collection into this list, at a specified index.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void addFirst(E e)</strong>: This method inserts the specified element at the beginning of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void addLast(E e)</strong>: This method appends an element at the end of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This method removes all the elements from the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean contains(Object o)</strong>: This method returns true if the specified object is present in the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E element()</strong>: This methods returns the head element of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E get(int index)</strong>: This method returns the element at the specified position in the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E getFirst()</strong>: This method returns the first element in the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int indexOf(Object o)</strong>: This method returns the index of a specified element if it is present in the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int lastIndexOf()</strong>: This method return the index of the last occurance of the specified element in the 
-                                        list, or -1 if the list does not contain that item.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E peek()</strong>: This method returns the head element of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E poll()</strong>: This method removes the head element of the list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void push(E e)</strong>: This method pushesan element onto the stack represented by this list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E remove()</strong>: This method retrieves and removes the head (first element) of this list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E remove(int index):</strong>This method removes the element at the specified position in this list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean removeFirstOccurrence(Object o)</strong>:This method removes the first occurrence of the specified 
-                                        element in this list (when traversing the list from head to tail).<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E removeLast()</strong>: This method removes and returns the last element from this list.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E set(int index, E element)</strong>: This method replaces the element at the specified position in 
-                                        this list with the specified element.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int size()</strong>:This method returns the number of elements in this list.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Priority Queue -->
-                        <div class="col-md-12" id="priorityqueue">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>Priority Queue</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.PriorityQueue class is an unbounded priority queue based on a priority heap.
-                                        1.) The elements of the priority queue are ordered according to their natural ordering or by a Comparator
-                                        provided at the queue construction time, depending on which constructor is used.
-                                        2.) A priority queue does not permit null elements.
-                                        3.) A priority queue relying on natural ordering also does not permit insertion of non-comparable objects.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean add(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>:This method removes all of the elements from this priority queue.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean contains(Object o)</strong>: This method returns true if this queue contains the specified element.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean offer(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E peek()</strong>:This method retrieves, but does not remove, the head of this queue, or 
-                                        returns null if this queue is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>E poll()</strong>: This method retrieves and removes the head of this queue, or returns null if this queue is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean remove(Object o)</strong>: This method removes a single instance of the specified element 
-                                        from this queue, if it is present.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int size()</strong>: This method returns the number of elements in this collection.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Tree Map -->
-                        <div class="col-md-12" id="treemap">
-                            <hr/>
-                            <div class="col-md-12 text-center"><h3>Tree Map</h3></div> 
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        The java.util.TreeMap class is the Red-Black tree based implementation of the Mapinterface.<br/>
-                                        1.) The TreeMap class gurantees that the Map will be in ascending key order.<br/>
-                                        2.) The map is sorted according to the natural sort method for the key Class, or by the Comparator provided 
-                                        at the map creation time, that will depend on which contructor is used.<br/>
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K, V &gt; ceilingEntry(K, V)</strong>: This method returns a key-value mapping associated 
-                                        with the least key greater than or equal to the given key, or null if there is no such key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>K ceilingKey(K key)</strong>:This method returns the least key greater than or equal to the
-                                        given key, or null if there is no such key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Comparator&lt;? super K &gt; Comparator()</strong>: This method Returns the comparator used to order 
-                                        the keys in this map, or null if this map uses the natural ordering of its keys.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsKey(Object key)</strong>:This method returns true if this map contains a mapping for the specified key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more keys to the specified value.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>NavigableSet&lt;K&gt; descendingKeySet()</strong>:This method returns a reverse order NavigableSet 
-                                        view of the keys contained in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>NavigableMap&lt;K,V&gt; descendingMap()</strong>:This method returns a reverse order view of the mappings contained in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K,V&gt; firstEntry()</strong>: This method returns a key-value mapping associated with the least key 
-                                        in this map, or null if the map is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>K firstKey()</strong>: This method returns the first (lowest) key currently in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>k floorKey(K key)</strong>:This method returns the greatest key less than or equal to the given 
-                                        key, or null if there is no such key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, 
-                                        or null if this map contains no mapping for the key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>SortedMap&lt;K,V&gt; headMap(k toKey)</strong>: This method returns a view of the portion of this map whose keys are 
-                                        strictly less than toKey.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K,V&gt; higherEntry(K Key)</strong>: This method returns the returns a key-value mapping associated 
-                                        with the least key strictly greater than the given key, or null if there is no such key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>k higherKey(K key)</strong>: This method returns the least key strictly greater than the given key, 
-                                        or null if there is no such key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K,V&gt; lastEntry()</strong>: This method returns a key-value mapping associated 
-                                        with the greatest key in this map, or null if the map is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>K lastKey()</strong>: This method returns the last (highest) key currently in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K,V&gt; lowerEntry(k key)</strong>:This method returns a key-value mapping associated with the greatest 
-                                        key strictly less than the given key, or null if there is no such key.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K,V&gt; pollFirstEntry()</strong>:This method removes and returns a key-value mapping associated with 
-                                        the least key in this map, or null if the map is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>Map.Entry&lt;K,V&gt; pollLastEntry()</strong>: This method removes and returns a key-value mapping associated 
-                                        with the greatest key in this map, or null if the map is empty.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V put(K key, V Value)</strong>: This method associates the specified value with the specified key in this map.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>V remove(Object key)</strong>:This method removes the mapping for this key from this TreeMap if present.<br/>
-                                        <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
-                                        <strong>int size()</strong>: This method returns the number of key-value mappings in this map.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="importantTopics">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Java Utils -->
+        <section id="javautils">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-md-12" id="">
+                    <hr />
+                    <div class="primary text-center"><span class="text-warning"><h1>Java.Utils</h1></span></div>
+                    <hr />
+                </div> 
+                <!-- ArrayDeque -->
+                <div class="col-md-12" id="arraydeque">
+                    <div class="col-md-12 text-center"><h3>ArrayDeque.</h3></div> 
+                    <hr/>
                     <div class="row">
                         <div class="col-md-12">
-                            <hr />
-                            <div class="primary text-center"><span class="text-primary"><h1>Important Topics</h1></span></div>
-                            <hr />
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.ArrayDeque class provides resizable-array and implements the Deque interface. The Array Deque
+                                has the following properties.<br/>
+                                1.) ArrayDeques have no capacity restrictions so they grow as necessary to support usage.<br/>
+                                2.) They are not thread safe ; in the absence of extenal synchronization.<br/>
+                                3.) Null elements are prohibited in the array deques.<br/>
+                                4.) They are faster than stack and linkedList. - Because most operations do not require the array to resize,
+                                particularly once the queue has reached a stable size and isn't grouwing any more. Everytime you add an element
+                                Stack has to allocate new objects and update the links. ArrayDeque just needs to put an object in the array
+                                and update the index. <br/>
+                                The class and its iterator implements all of the optional methods of the Collection and Iterator interfaces.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>public class ArrayDeque&lt;E&gt; extends AbstractCollection&lt;E&gt; implements Deque&lt;E&gt;, Cloneable, Seriazable</strong><br/>
+                                &lt;E&gt; represents an Element, which could any class eg, ArrayList.
+                            </p>
+                            <p>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong> : Inserts the specified element at the end of this deque.</br>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void addFirst(E e) </strong> : Insert the specified element at the front of this dequeu.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void addLast(E e) </strong> : Insert the specified element at the end of this deque.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: Removes all elements from this dequeu.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(E e)</strong>: Returns true is the element is present in the deque.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E element()</strong>: Retrives, but does not remove the head of the queue represented by this deque.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E getFirst()</strong>: Retrives the first element of the deque.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E getLast()</strong>: Retrives the last element of the deque.<br/> 
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E peek()</strong>: Retrives the head of the deque.<br/>
+                            </p>
                         </div>
-                        <div id="keywords"class="col-md-12">
-                            <div class="primary text-center"><span class="text-success"><h1>Keywords</h1></span></div>
-                            <hr/>
-                            <div class="row">
-                                <div class="col-md-12 text-center"><h3>The "STATIC" Keyword.</h3></div>
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;There will be times when you want to define a clas
-                                        member that will be used independently of any other object of that class. It is possible to create a member that
-                                        can be used by itself without reference to a specific instance.The most common example of a static member is the main 
-                                        method because it must be before any other objects exists</p>
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Methods declared as static has some limitations. <br/>
-                                            1.) They can only directly call other static methods.<br/>
-                                            2.) They can only directly access static data.<br/>
-                                            3.) They cannot refer to <strong>this</strong> or <strong>super</strong> in any way.<br/>
-                                        </p>
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Outside the class in which they are defined, static 
-                                            methods and variables can be used independently of any object. To do so, you need to only specify the name of the 
-                                            class followed by the dot operator.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-12 text-center"><h3>The Final Keyword.</h3></div>
-                                    <div class="col-md-12">
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The field can be declared final to prevents its 
-                                            contents fron being modified, making it essesntially, a constant. This means that you must initialize a final
-                                            field when it is declared.
-                                        </p>
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Declaring a parameter final prevents it from being 
-                                            changed within the method. Declaring a local variable final prevents it from being assigned a value more than once.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="exceptions"class="col-md-12">
-                                <hr />
-                                <div class="primary text-center"><span class="text-success"><h1>Exceptions</h1></span></div>
-                                <div class="col-md-12">
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A java exception is an object that describes an exceptional
-                                        condition that has occured in a piece of code. Java exception handling is managed by five keywords: try, catch, throw,
-                                        throws and finally.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Program statemnets that you want to monitor for exceptions are
-                                        contained within a <strong>try</strong> block. If an exception occurs inside a try blockit is thrown.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Your code can catch this exception, using catch and handle it in some
-                                        rational manner.
-                                    </p>
-                                    <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; To manually throw an exception, use the keyword throw. Any exception
-                                        that is thrown out by a method mst be specified as such by a <strong>throws</strong> clause.</p>
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Any code that must absolutely be executed must be put in the finally
-                                            block.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;All the exceptions comes under the Throwable class. The throwable class
-                                            is devided into two branches. 1.) Exceptions and 2.) Errors.
-                                        </p>
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; <strong>Exception</strong> - This class is used for exceptional conditions
-                                            that user programs should catch. One important subclass of Exception class is the <strong>Runtime  Exception class</strong>
-                                            Exceptions of this type are automatically defined for the programs that you write and include things such as division by zero.
-                                        </p>
-                                        <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;<strong>Error</strong> This class defines exceptions that are not expected
-                                            to be caught under normal circumstances by your program. Exceptions of type Error are used by the Java run time system to indicate
-                                            errors having to do with the run time environment, itself.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                     </div>
-                </body>
-                
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
-                integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
-                integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-                </html>
+                </div><hr/>
+                <!-- ArrayList -->
+                <div class="col-md-12" id="arraylist">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>ArrayList</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.ArrayList class provides resizable-array and implements the List interface.<br/>
+                                1.) It implements all the optional list operations and it also permits all elements, including null.<br/>
+                                2.) It provides method to manipulate the size of the array that is used internally to store the list.<br/>
+                                3.) The constant factor is low compared to that for the linkedList implementation.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong>: The method appends the specified element to the end of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void add(int index, E element)</strong>: The methods inserts the element at the specified position of the list<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean addAll(Collection &lt;?extends E &gt; c)</strong>: This method appends all of the elements in the specified 
+                                collection to the end of this list, in order that they are returned by the specified collection's Iterator.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolead addAll( int index, Collection &lt;?extends E &gt; c )</strong>: This methods inserts all of the specified
+                                collection into this list, starting at the specified position.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>void clear()</strong>: This method removes all of the elements from the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>Object Clone()</strong>: This methods returns a shallow copy of this ArrayList instance.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(Object o)</strong>: This methds returns true if the list contains the specified element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void ensureCapacity(int minCapacity)</strong>: This increases the capacity of the ArrayList.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E get(int index)</strong>: This method returns the element at the specified position.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int lastIndexOf(Object o)</strong>: This method returns the index of the last occurance of the specified
+                                element in the list, or -1 if this list does not contain the element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean isEmpty()</strong>: Returns true if the list is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E remove(int index)</strong>: This methods removes the element at the specified position in the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>protected void removeRange(int fromIndex, int toIndex)</strong>: This methods removes from this list all of the 
+                                elements whose index is between fromIndex(inclusive) and toIndex(exclusive).
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E set(int index, E element)</strong>: This method replaces the element at the specified position with the specified 
+                                element.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- EnumMap -->
+                <div class="col-md-12" id="enummap">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>EnumMap</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.EnumMap class is a specialized Map implementation for use with enum keys.<br/>
+                                1.) All of the keys in an enum map must come from a single enum type that is specified, explicitly or implicitly.<br/>
+                                2.) Enum maps are maintained in the natural order of their keys.<br/>
+                                3.) Enum map are not synchronized.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>EnumMap(Class &lt;K&gt; keyType)</strong>: Creates an empty enum map with the specified key type.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This methods removes all mapings from the map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>EnumMap &lt;K,V&gt; clone()</strong>: This method returns a shallow copy of the enums.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsKey(Object key)</strong>: This methods returns true if this map contains a maping of
+                                the specified key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more keys to 
+                                the specified value<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Set&lt;Map.Entry&lt;K,V&gt;&gt; entrySet()</strong>: This methods returns a set view of the mappings contained
+                                in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean equals(Object o)</strong>:This methods compares the specified object with this map for equality.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>V get()</strong>: This method returns the value to which the specified key is mapped,or null if the map contains
+                                no mapping for that key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>V put()</strong>: This method associates the specified value with the specified key in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>void putAll(Map&lt;? extends K,? extends V &gt;m)</strong>: This method copies all of the mappings from the specified 
+                                map to this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>V remove(Object key)</strong>: This method removes the mapping for this key from this map if present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;                                
+                                <strong>int size()</strong>: This method returns the number of key-value mapping in the map.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- HashMap -->
+                <div class="col-md-12" id="hashmap">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>HashMap</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.HashMap class is the hash table based implementation of the Map interface.<br/>
+                                1.) The class makes no gurantees as to the iteration order of the map.<br/>
+                                2.) This class permits null values and the null key.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Object clone()</strong>: This method returns a shallow copy this HashMap instance , the keys and values
+                                themselves are not clones.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsKey(Object key)</strong>: This method returns true if this map contains a mapping for the
+                                specified key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsValue(Object value)</strong>: This methods returns true if this map maps one more keys
+                                to the specified value.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, or null 
+                                if this map contains no mapping for that key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean isEmpty()</strong>: This method returns true if this map contains no key-value pair.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Set&lt;K&gt; keySet()</strong>: This method returns a set view of the keys contained in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V put(K key, V value)</strong>: This method associates the specified value with the specified key
+                                int this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void putAll(Map&lt;?extends K,? extends V&gt;m)</strong>: This method copies all of the mappings from the specified
+                                map to this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V remove(Object key)</strong>:This method removes the mappings for the specified key from this map if
+                                present.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- HashSet -->
+                <div class="col-md-12" id="hashset">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>HashSet</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.HashSet class implements the Set interface, backed by a hash table.<br/>
+                                1.) This class makes no gurantees as to the iteration order  of the set.<br/>
+                                2.) The class permits the null elements.</br.>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong>: This method adds the specified element to this set if its not already present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all of the elements from this Set<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(Object o)</strong>: This method returns true if this sset contains the specified element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean isEmpty()</strong>: This method returns true if the set is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean remove(Object o)</strong>: This method removes the specified element fro this set if it is present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int size()</strong>: This method returns the size of the hashSet.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- HashTable -->
+                <div class="col-md-12" id="hashtable">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>HashTable</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.Hashtable class implements a HashTable which maps keys to values.<br/>
+                                1.) In this any non-null object can be used as a key or value pair.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all of the elements from this Set<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(Object value)</strong>: This method returns true if this table contains the specified value.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsKey(Object key)</strong>: This method returns true if this table contains the specified key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean isEmpty()</strong>: This method returns true if the set is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V remove(Object key)</strong>: This method removes the key from this hashtable if it is present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int size()</strong>: This method returns the size of the hashSet.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V get(Object key)</strong>:This method returns the value to which the specified key is mapped, or null if this map
+                                contains no mapping for the key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int hashCode()</strong>: This method returns the hash code value for this map as per the defination in the Map interface.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V put(K Key, V value)</strong>: This method maps the specified key to the specified value in this hashtable.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void putAll(Map&lt;?extends K,? extends V &gt; t)</strong>: This method copies all of the mappings from the specified map to this
+                                hashtable.<br/> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- LinkedHashMap -->
+                <div class="col-md-12" id="linkedhashmap">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>LinkedHashMap</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.LinkedHashMap is a HashTable and LinkedList implementation of the Map interface, with 
+                                predicatable iteration order.<br/>
+                                1.) The class provides all of the optional Map operations, and permits null elements.<br/>
+                                2.) The iteration over a HashMap is likely to be more expensive.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more
+                                keys to the specified value.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, or
+                                the null if this map contains no mapping for the key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>protected boolean removeEldestEntry(Map.Entry&lt;K,V&gt; eldest)</strong>: This method returns true
+                                if this map should remove its eldest entry.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- LinkedList -->
+                <div class="col-md-12" id="linkedlist">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>LinkedList</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.LinkedList class operations perform we can expect for a doubly-linked list. Operations that
+                                index into the list will traverse the list from the beginning or the end, whichever is closer to the specfied index. 
+                                <br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong>: This method appends the specified element to the end of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void add(int index, E element)</strong>: This method inserts the specified element at the specified position
+                                in the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean addAll(Collection&lt;?extends E&gt;c)</strong>:This method appends all of the elements in the specified
+                                collection to the end of the list, in the order that they are returned by the specified collection's iterator.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean addAll(int index, Collection&lt;?extends E&gt;c)</strong>: This methods inserts all the elements in the specfied
+                                collection into this list, at a specified index.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void addFirst(E e)</strong>: This method inserts the specified element at the beginning of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void addLast(E e)</strong>: This method appends an element at the end of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all the elements from the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(Object o)</strong>: This method returns true if the specified object is present in the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E element()</strong>: This methods returns the head element of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E get(int index)</strong>: This method returns the element at the specified position in the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E getFirst()</strong>: This method returns the first element in the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int indexOf(Object o)</strong>: This method returns the index of a specified element if it is present in the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int lastIndexOf()</strong>: This method return the index of the last occurance of the specified element in the 
+                                list, or -1 if the list does not contain that item.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E peek()</strong>: This method returns the head element of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E poll()</strong>: This method removes the head element of the list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void push(E e)</strong>: This method pushesan element onto the stack represented by this list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E remove()</strong>: This method retrieves and removes the head (first element) of this list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E remove(int index):</strong>This method removes the element at the specified position in this list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean removeFirstOccurrence(Object o)</strong>:This method removes the first occurrence of the specified 
+                                element in this list (when traversing the list from head to tail).<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E removeLast()</strong>: This method removes and returns the last element from this list.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E set(int index, E element)</strong>: This method replaces the element at the specified position in 
+                                this list with the specified element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int size()</strong>:This method returns the number of elements in this list.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Priority Queue -->
+                <div class="col-md-12" id="priorityqueue">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>Priority Queue</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.PriorityQueue class is an unbounded priority queue based on a priority heap.
+                                1.) The elements of the priority queue are ordered according to their natural ordering or by a Comparator
+                                provided at the queue construction time, depending on which constructor is used.
+                                2.) A priority queue does not permit null elements.
+                                3.) A priority queue relying on natural ordering also does not permit insertion of non-comparable objects.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>:This method removes all of the elements from this priority queue.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(Object o)</strong>: This method returns true if this queue contains the specified element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean offer(E e)</strong>:This method inserts the specified element into this priority queue.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E peek()</strong>:This method retrieves, but does not remove, the head of this queue, or 
+                                returns null if this queue is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E poll()</strong>: This method retrieves and removes the head of this queue, or returns null if this queue is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean remove(Object o)</strong>: This method removes a single instance of the specified element 
+                                from this queue, if it is present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int size()</strong>: This method returns the number of elements in this collection.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tree Map -->
+                <div class="col-md-12" id="treemap">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>Tree Map</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.TreeMap class is the Red-Black tree based implementation of the Mapinterface.<br/>
+                                1.) The TreeMap class gurantees that the Map will be in ascending key order.<br/>
+                                2.) The map is sorted according to the natural sort method for the key Class, or by the Comparator provided 
+                                at the map creation time, that will depend on which contructor is used.<br/>
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K, V &gt; ceilingEntry(K, V)</strong>: This method returns a key-value mapping associated 
+                                with the least key greater than or equal to the given key, or null if there is no such key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>K ceilingKey(K key)</strong>:This method returns the least key greater than or equal to the
+                                given key, or null if there is no such key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all of the mappings from this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Comparator&lt;? super K &gt; Comparator()</strong>: This method Returns the comparator used to order 
+                                the keys in this map, or null if this map uses the natural ordering of its keys.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsKey(Object key)</strong>:This method returns true if this map contains a mapping for the specified key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean containsValue(Object value)</strong>: This method returns true if this map maps one or more keys to the specified value.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>NavigableSet&lt;K&gt; descendingKeySet()</strong>:This method returns a reverse order NavigableSet 
+                                view of the keys contained in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>NavigableMap&lt;K,V&gt; descendingMap()</strong>:This method returns a reverse order view of the mappings contained in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K,V&gt; firstEntry()</strong>: This method returns a key-value mapping associated with the least key 
+                                in this map, or null if the map is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>K firstKey()</strong>: This method returns the first (lowest) key currently in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>k floorKey(K key)</strong>:This method returns the greatest key less than or equal to the given 
+                                key, or null if there is no such key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V get(Object key)</strong>: This method returns the value to which the specified key is mapped, 
+                                or null if this map contains no mapping for the key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>SortedMap&lt;K,V&gt; headMap(k toKey)</strong>: This method returns a view of the portion of this map whose keys are 
+                                strictly less than toKey.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K,V&gt; higherEntry(K Key)</strong>: This method returns the returns a key-value mapping associated 
+                                with the least key strictly greater than the given key, or null if there is no such key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>k higherKey(K key)</strong>: This method returns the least key strictly greater than the given key, 
+                                or null if there is no such key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K,V&gt; lastEntry()</strong>: This method returns a key-value mapping associated 
+                                with the greatest key in this map, or null if the map is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>K lastKey()</strong>: This method returns the last (highest) key currently in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K,V&gt; lowerEntry(k key)</strong>:This method returns a key-value mapping associated with the greatest 
+                                key strictly less than the given key, or null if there is no such key.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K,V&gt; pollFirstEntry()</strong>:This method removes and returns a key-value mapping associated with 
+                                the least key in this map, or null if the map is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>Map.Entry&lt;K,V&gt; pollLastEntry()</strong>: This method removes and returns a key-value mapping associated 
+                                with the greatest key in this map, or null if the map is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V put(K key, V Value)</strong>: This method associates the specified value with the specified key in this map.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>V remove(Object key)</strong>:This method removes the mapping for this key from this TreeMap if present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int size()</strong>: This method returns the number of key-value mappings in this map.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Treeset -->
+                <div class="col-md-12" id="treeset">
+                    <hr/>
+                    <div class="col-md-12 text-center"><h3>TreeSet</h3></div> 
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                The java.util.TreeSet class implements the Set interface.<br/>
+                                1.) The treeset gurantees that the Map will be in ascending key order and backed by a TreeMap.<br/>
+                                2.) The Map is sorted according to the natural sort method for the key Class.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean add(E e)</strong>: This method adds the specified element to this set if it is not already present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean addAll(Collection&lt;?extendsE&gt; c)</strong>:This method adds all of the elements in the 
+                                specified collection to this set.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E ceiling(E e)</strong>:This method returns the least element in this set greater than 
+                                or equal to the given element, or null if there is no such element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>void clear()</strong>: This method removes all of the elements from this set.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean contains(Object o)</strong>: This method returns true if this set contains the specified element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>NavigableSet&lt;E&gt; descendingSet()</strong>: This method returns a reverse order view of the elements contained in this set.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E first()</strong>:This method returns the first (lowest) element currently in this set.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E floor()</strong>: This method Returns the greatest element in this set less than or equal to
+                                the given element, or null if there is no such element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E higher(E e)</strong>:This method returns the least element in this set strictly greater than the given 
+                                element, or null if there is no such element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean isEmpty()</strong>: This method returns true if this set contains no elements.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E last()</strong>: This method returns the last (highest) element currently in this set<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E lower(E e)</strong>:This method returns the greatest element in this set strictly less than the given element,
+                                or null if there is no such element.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>E pollFirst()</strong>:This method retrieves and removes the first (lowest) element, or returns null if this set is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>pollLast()</strong>: This method retrieves and removes the last (highest) element, or returns null if this set is empty.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>boolean remove(Object o)</strong>:This method removes the specified element from this set if it is present.<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>int size()</strong>:This method returns the number of elements in this set (its cardinality).<br/>
+                                <span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;
+                                <strong>SortedSet&lt;E&gt; subSet(E fromElement, E toElement)</strong>:This method returns a view of the portion of this set whose 
+                                elements range from fromElement, inclusive, to toElement, exclusive.<br/>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important topics -->
+        <section id="importantTopics">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <div class="primary text-center"><span class="text-primary"><h1>Important Topics</h1></span></div>
+                    <hr />
+                </div>
+                <div id="keywords"class="col-md-12">
+                    <div class="primary text-center"><span class="text-success"><h1>Keywords</h1></span></div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12 text-center"><h3>The "STATIC" Keyword.</h3></div>
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;There will be times when you want to define a clas
+                                member that will be used independently of any other object of that class. It is possible to create a member that
+                                can be used by itself without reference to a specific instance.The most common example of a static member is the main 
+                                method because it must be before any other objects exists</p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Methods declared as static has some limitations. <br/>
+                                    1.) They can only directly call other static methods.<br/>
+                                    2.) They can only directly access static data.<br/>
+                                    3.) They cannot refer to <strong>this</strong> or <strong>super</strong> in any way.<br/>
+                                </p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Outside the class in which they are defined, static 
+                                    methods and variables can be used independently of any object. To do so, you need to only specify the name of the 
+                                    class followed by the dot operator.
+                                </p>
+                            </div>
+                            <div class="col-md-12 text-center"><h3>The Final Keyword.</h3></div>
+                            <div class="col-md-12">
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; The field can be declared final to prevents its 
+                                    contents fron being modified, making it essesntially, a constant. This means that you must initialize a final
+                                    field when it is declared.
+                                </p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Declaring a parameter final prevents it from being 
+                                    changed within the method. Declaring a local variable final prevents it from being assigned a value more than once.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="exceptions"class="col-md-12">
+                        <hr />
+                        <div class="primary text-center"><span class="text-success"><h1>Exceptions</h1></span></div>
+                        <div class="col-md-12">
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; A java exception is an object that describes an exceptional
+                                condition that has occured in a piece of code. Java exception handling is managed by five keywords: try, catch, throw,
+                                throws and finally.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;Program statemnets that you want to monitor for exceptions are
+                                contained within a <strong>try</strong> block. If an exception occurs inside a try blockit is thrown.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Your code can catch this exception, using catch and handle it in some
+                                rational manner.
+                            </p>
+                            <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; To manually throw an exception, use the keyword throw. Any exception
+                                that is thrown out by a method mst be specified as such by a <strong>throws</strong> clause.</p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; Any code that must absolutely be executed must be put in the finally
+                                    block.
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;All the exceptions comes under the Throwable class. The throwable class
+                                    is devided into two branches. 1.) Exceptions and 2.) Errors.
+                                </p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp; <strong>Exception</strong> - This class is used for exceptional conditions
+                                    that user programs should catch. One important subclass of Exception class is the <strong>Runtime  Exception class</strong>
+                                    Exceptions of this type are automatically defined for the programs that you write and include things such as division by zero.
+                                </p>
+                                <p><span><i class="fa fa-sm fa-certificate"></i></span>&nbsp;<strong>Error</strong> This class defines exceptions that are not expected
+                                    to be caught under normal circumstances by your program. Exceptions of type Error are used by the Java run time system to indicate
+                                    errors having to do with the run time environment, itself.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </body>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        </html>
