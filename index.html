@@ -70,6 +70,9 @@
                         <a class="dropdown-item" href="#exceptions">Exceptions</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#servlets">Servlets</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -958,6 +961,34 @@
             </div>
         </section>
 
+        <section id="servlets">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <div class="primary text-center"><span class="text-info"><h1>Servlets</h1></span></div>
+                    <hr />
+                </div>
+                <div class="col-md-12">
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        Condsider a request from a static web page. A user enters a Uniform Resouce loader(URL)
+                        into a browser. The browser generates an HTTP request to the appropriate web server. The
+                        web server maps this request to a specific file. This file is returned in an HTTP response
+                        to the browser. The HTTP header in the response indicates the type of content. The Mulitpurpose 
+                        Internet Mail Extensions(MIME) are used for this purpose. The HTML source code of a webpage has a
+                        MIME type of text/html.
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        Servlets offers several advantages in comparison with CGI. First, performance is 
+                        significantly better. Servlets execute within the address space of a web server. It is not
+                        necessary to create a separate process to handle each client request. Second the servlets 
+                        are platform independent because they are written in java. Third, the java security manager
+                        on the server enforces a set of restrictions to protect the resources on a server machine.
+                        Finally, the full functionality of the java class libraries is available to a servlet. It 
+                        can communicate with applets, databases, or other software via the sockets and RMI mechanisms.
+                    </p>
+                </div>
+            </div>
+        </section>
         <!-- Important topics -->
         <section id="importantTopics">
             <div class="row">
@@ -1033,9 +1064,10 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-        </body>
+                </div>
+            </section>
+        </div>
+    </body>
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
