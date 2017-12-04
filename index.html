@@ -986,6 +986,62 @@
                         Finally, the full functionality of the java class libraries is available to a servlet. It 
                         can communicate with applets, databases, or other software via the sockets and RMI mechanisms.
                     </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        <strong>The Life Cycle of a servlet.</strong><br/>>
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        Three methods are central to the life cycle of a servlet. These are init(), service(),
+                        and destroy. They are implemented by every servlet and are invoked at specific times by the
+                        server.
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        <strong>Servlet Development options</strong>
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        To create servlet you'll need access to a servlet container/server. Two popular ones
+                        are Glassfish and tomcat. Glassfist is from Oracle and is provided by Java EE SDK. It 
+                        is supported by Netbeans. Tomcat is an open source product maintained by the Apache
+                        Software foundation. It can also be used by NetBeans.
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        <strong>The Servlet API</strong>
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        Tomcat contains the class libraries, documentation and run time support that you will
+                        need to create and test servlets. Two packages contain the classes and interface that
+                        are required to build the servlets. These are javax.servlets and javax.servlet.http.
+                        They constitute the core of the servlet API
+                    </p>
+                    <p><span><i class="fa fa-lg fa-star"></i></span>&nbsp;
+                        <strong>The javax.servlet Package</strong>
+                    </p>
+                    <p>
+                       1) <strong>The Servlet Interface</strong> - All sservlet must implements the Servlet interface. It declares
+                       the init(), service(), and destroy() methods that are called by the server during the life
+                       cycle of a servlet. A method is also provided that allows a servlet to obtain any
+                       initialization parameters. The init(), service(), and destroy() methods are the life cycle 
+                       of a servlet. These methods are invoked by the server. The <strong>getServletConfig()</strong>
+                       method is called by the servlet to provide a string with useful information.<br/>>
+                       2.) <strong>The ServletConfig Interface</strong> - The ServletConfig interface allows a servlet 
+                       to obtain configuration data when it is loaded.<br/>
+                       3.) <strong>The ServletContext Interface</strong>: The Servlet context interface enables servlets to 
+                       obtain information about their environment.<br/>
+                       4.) <strong>The ServletRequest Interface</strong>: The ServletRequest interface enables a servlet to obtain
+                       information about a client request.<br/>
+                       5.) <strong>The ServletResponse Interface</strong>: The ServletRequest interface enables a servlet to formulate
+                       a response for a client.<br/>
+                       6.)<strong>The GenericServlet Class</strong>: The GenericServlet class provides implementation of the basic
+                       life cycle methods for a servlet. GenericServlet implements the Servlet and ServletConfig interfaces<br/>
+                       7.)<strong>The ServletInputStream Class</strong>: The ServletInputStream class extends InputStream. It is
+                       implemented by the servlet container and provides an input stream that a servlet developer can use to read
+                       data from a client request.<br/>
+                       8.)<strong>The ServletOutputStream Class</strong>: The ServletOutputStream class extends OutputStream. It 
+                       is implemented by the servlet container and provides an output stream that a servlet developer can use
+                       to write data to a client response.<br/>
+                       9.)<strong>The Servlet Exception Classes</strong>: javax.servlet defines two exceptions. The first is
+                       ServletException, which indicates that a servllet problem has occured. The second is UnavailableException,
+                       which extends ServletException. It indicates that the servlet is unavailable.<br/>
+                    </p>
                 </div>
             </div>
         </section>
