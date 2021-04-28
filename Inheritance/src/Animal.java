@@ -58,7 +58,7 @@ public class Animal {
         System.out.println(this.getName() + " is eating..");
     }
 
-    public void move() {
-        System.out.println(this.getName() +  " is moving..");
+    public void move(int speed) {
+        System.out.println(this.getName() +  " is moving at the speed of " + speed);
     }
 }

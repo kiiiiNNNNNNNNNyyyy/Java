@@ -25,4 +25,26 @@ public class Dog extends Animal {
         chew();
         super.eat();
     }
+
+    public void walk() {
+        System.out.println(this.getName() + " is gonna start walking...");
+        super.move(5);
+    }
+
+    public void run() {
+        System.out.println(this.getName() + " is gonna start running...");
+        move(15);
+    }
+
+    private void moveLegs(int speed) {
+        System.out.println(this.getName() + " is moving its leg");
+    }
+
+    // if overridden method is not found... its gonna automatically call the super class move()
+    @Override
+    public void move(int speed) {
+        System.out.println(this.getName() + " is gonna start moving its legs..");
+        moveLegs(speed);
+        super.move(speed);
+    }
 }
