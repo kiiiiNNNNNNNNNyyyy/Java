@@ -10,27 +10,12 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getPcCase() {
-        return pcCase;
+    public void poewrUp() {
+        pcCase.pressPowerButton();
+        drawLogo();
     }
 
-    public void setPcCase(Case pcCase) {
-        this.pcCase = pcCase;
-    }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
-    public void setMonitor(Monitor monitor) {
-        this.monitor = monitor;
-    }
-
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
-
-    public void setMotherboard(Motherboard motherboard) {
-        this.motherboard = motherboard;
+    private void drawLogo() {
+        monitor.drawPixelAt(1200, 50, "yellow");
     }
 }
