@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Composition/Composition.iml" filepath="$PROJECT_DIR$/Composition/Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concurrency/Concurrency.iml" filepath="$PROJECT_DIR$/Concurrency/Concurrency.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concurrent Package/Concurrent Package.iml" filepath="$PROJECT_DIR$/Concurrent Package/Concurrent Package.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Deadlocks/Deadlocks.iml" filepath="$PROJECT_DIR$/Deadlocks/Deadlocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/Encapsulation/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation/Encapsulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Exceptions/Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Final/Final.iml" filepath="$PROJECT_DIR$/Final/Final.iml" />
